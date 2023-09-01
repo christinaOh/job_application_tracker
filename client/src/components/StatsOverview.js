@@ -4,14 +4,14 @@ import RejectedStatCard from "./RejectedStatCard";
 import InterviewStatCard from "./InterviewStatCard";
 import AddJobAppButton from "./AddJobAppButton";
 
-function StatsOverview({jobApps}) {
+function StatsOverview({jobApps, onJobAppsChange}) {
     return (
       <div>
         <TotalStatCard jobApps={jobApps}/>
         <InterviewStatCard jobApps={jobApps}/>
         <AwaitingRespStatCard jobApps={jobApps}/>
         <RejectedStatCard jobApps={jobApps}/>
-        <AddJobAppButton/>
+        <AddJobAppButton onJobAppsChange = {onJobAppsChange}/>
       </div>
     )
 }

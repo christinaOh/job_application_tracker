@@ -18,8 +18,8 @@ function Dashboard() {
 
     return (
       <div>
-        <StatsOverview jobApps={jobApps}/>
-        <JobAppTable jobApps={jobApps}/>
+        <StatsOverview jobApps={jobApps} onJobAppsChange={setJobApps}/>
+        <JobAppTable jobApps={jobApps} onJobAppsChange={setJobApps}/>
       </div>
     );
 }
