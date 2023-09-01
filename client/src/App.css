@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+/* TYPOGRAPHY */
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+tbody {
+  font-weight: 400;
+  font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+thead {
+  font-weight: 700;
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.logo {
+  font-weight: 700;
+  font-size: 35px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* END TYPOGRAPHY */
+
+/* HEADER STYLING */
+header {
+  background-color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  margin: 0;
+  padding:22px 92px;
 }
+
+/* END HEADER STYLING */
+
+/* STAT CARD STYLING */
+
+.stats-overview {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 96px;
+}
+
+.stat {
+  background-color: black;
+  width: 225px;
+  height: 181px;
+  border-radius: 10px;
+}
+
+.stat > p, h2 {
+  color: #ffff;
+  text-align: center;
+}
+
+.stat > h2 {
+  font-size: 40px;
+  font-weight: 900;
+  padding-top: 54px;
+  margin-top: 0px;
+  margin-bottom: 18px;
+}
+
+.stat > p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px 50px;
+}
+
+.circle {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  background-color: white;
+  border: solid black 5px;
+  margin-bottom: -40px;
+  margin-left: 67.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  width: 68px;
+  height: 68px;
+  z-index: 100;
+}
+
+
+/* Heart SVG Styling  */
+.cls-1 {fill: #ff80c3;}
+.cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7{stroke:#54596e;stroke-linecap:round;stroke-width:2px;}
+.cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6{stroke-linejoin:round;}
+.cls-2{fill:#d8d8d8;}
+.cls-3{fill:#fff;}
+.cls-4,.cls-7{fill:none;}
+.cls-5{fill:#fff35f;}
+.cls-6{fill:#55a6ff;}
+.cls-7{stroke-miterlimit:10;}
+.cls-8{fill:#54596e;}
+
+/* End Heart SVG Styling  */

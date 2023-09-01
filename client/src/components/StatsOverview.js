@@ -6,7 +6,7 @@ import AddJobAppButton from "./AddJobAppButton";
 
 function StatsOverview({jobApps, onJobAppsChange}) {
     return (
-      <div>
+      <div class="stats-overview">
         <TotalStatCard jobApps={jobApps}/>
         <InterviewStatCard jobApps={jobApps}/>
         <AwaitingRespStatCard jobApps={jobApps}/>

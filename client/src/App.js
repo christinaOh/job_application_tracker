@@ -5,7 +5,7 @@ import Dashboard from './components/Dashboard';
 function Header() {
   return (
     <header>
-      <h2>LOGO</h2>
+      <h2 class="logo">LOGO</h2>
     </header>
   )
 }
@@ -22,6 +22,9 @@ function Footer() {
 function App() {
   return (
     <div>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
+      </style>
       <Header/>
       <Dashboard/>
       <Footer/>
