@@ -17,7 +17,7 @@ function JobAppTable({jobApps}) {
             <th>Job Position</th>
             <th>Company</th>
             <th>Location</th>
-            <th>Job Posting</th>
+            <th><p>Job</p><p>Posting</p></th>
             <th>Applied On</th>
             <th>Status</th>
           </tr>

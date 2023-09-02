@@ -4,9 +4,9 @@ function JobAppRow({ jobApp }) {
         <td>{jobApp.jobTitle}</td>
         <td>{jobApp.company}</td>
         <td>{jobApp.location}</td>
-        <td>{jobApp.jobPostLink}</td>
+        <td><a href={jobApp.jobPosting}>Link</a></td>
         <td>{jobApp.appliedOn}</td>
-        <td>{jobApp.status}</td>
+        <td class={"status "+ jobApp.status.toLowerCase().replaceAll(" ", "-")}><p>{jobApp.status}</p></td>
       </tr>
     );
 }

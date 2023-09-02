@@ -100,6 +100,94 @@ header {
 }
 /* END STATS OVERVIEW STYLING */
 
+/* TABLE STYLING */
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 3px solid rgba(151,151,151,0.51);
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 70px;
+}
+
+th {
+  text-align: left;
+}
+
+thead th:nth-child(1) {
+  width: 25%;
+  padding-left: 30px;
+}
+
+thead th:nth-child(2) {
+  width: 25%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 10%;
+}
+
+th > p {
+  margin: 0px;
+}
+
+thead th:nth-child(5) {
+  width: 12%;
+}
+
+thead th:nth-child(6) {
+  width: 15%;
+  padding-right: 30px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(151,151,151,0.10);
+}
+
+tr {
+  border-bottom: solid rgba(151,151,151,0.51) 2px;
+}
+
+td:first-child {
+  padding-left: 30px;
+}
+
+td:last-child {
+  padding-right: 30px;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+.status > p {
+  font-size: 16px;
+  font-weight:600;
+  border: 2px solid black;
+  padding: 5px 12px;
+  margin: 0px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.rejected > p {
+  background-color: #FF6058;
+}
+
+.awaiting-response > p {
+  background-color: #FFD578;
+}
+
+.invited-for-interview > p {
+  background-color: #5DAA99;
+}
+/* END TABLE STYLING */
+
 /* Star SVG Styling */
 #star {
   width: 52px;
