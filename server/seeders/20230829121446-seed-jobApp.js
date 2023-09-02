@@ -17,7 +17,7 @@ module.exports = {
       company: 'Pinterest',
       location: 'Remote',
       jobPosting: 'https://www.pinterestcareers.com/job-search-results/?primary_category=University',
-      appliedOn: new Date().toISOString(),
+      appliedOn: '2023-08-11',
       status: 'Awaiting Response',
       createdAt: new Date().toDateString(),
       updatedAt: new Date().toDateString()
@@ -26,7 +26,7 @@ module.exports = {
       company: 'University of British Columbia',
       location: 'Vancouver, BC',
       jobPosting: 'https://students.ubc.ca/career',
-      appliedOn: new Date().toISOString(),
+      appliedOn: '2023-08-15',
       status: 'Awaiting Response',
       createdAt: new Date().toDateString(),
       updatedAt: new Date().toDateString()
@@ -35,7 +35,7 @@ module.exports = {
       company: 'TD',
       location: 'Remote',
       jobPosting: 'https://jobs.td.com/en-CA/',
-      appliedOn: new Date().toISOString(),
+      appliedOn: '2023-08-21',
       status: 'Rejected',
       createdAt: new Date().toDateString(),
       updatedAt: new Date().toDateString()
