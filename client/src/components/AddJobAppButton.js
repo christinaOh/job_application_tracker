@@ -10,7 +10,7 @@ function AddJobAppButton({onJobAppsChange}) {
   
     return (
       <div>
-        <button onClick={OpenPopUp}>Add New Application</button>
+        <button onClick={OpenPopUp} class="new-app-button"><p>Add New</p><p>Application</p></button>
         {popUpVisible ? <NewJobAppForm onPopUpClose={setPopUpVisible} onJobAppsChange={onJobAppsChange} /> : null}
       </div>
     );

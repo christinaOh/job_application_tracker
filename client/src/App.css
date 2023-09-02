@@ -33,12 +33,15 @@ header {
 
 /* END HEADER STYLING */
 
-/* STAT CARD STYLING */
+/* STATS OVERVIEW STYLING */
 
 .stats-overview {
   display: flex;
   justify-content: space-evenly;
   margin-top: 96px;
+  margin-bottom: 46px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .stat {
@@ -48,7 +51,7 @@ header {
   border-radius: 10px;
 }
 
-.stat > p, h2 {
+.stat > :is(p, h2) {
   color: #ffff;
   text-align: center;
 }
@@ -81,23 +84,79 @@ header {
   align-items: center;
 }
 
-svg {
-  width: 68px;
-  height: 68px;
-  z-index: 100;
+.new-app-button {
+  padding: 16px 72px;
+  background-color: #3C4043;
+  border-radius: 5px;
+  border: solid black 1px;
+  margin-top: 90px;
 }
 
+.new-app-button>p {
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0px
+}
+/* END STATS OVERVIEW STYLING */
 
-/* Heart SVG Styling  */
-.cls-1 {fill: #ff80c3;}
-.cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7{stroke:#54596e;stroke-linecap:round;stroke-width:2px;}
-.cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6{stroke-linejoin:round;}
-.cls-2{fill:#d8d8d8;}
-.cls-3{fill:#fff;}
-.cls-4,.cls-7{fill:none;}
-.cls-5{fill:#fff35f;}
-.cls-6{fill:#55a6ff;}
-.cls-7{stroke-miterlimit:10;}
-.cls-8{fill:#54596e;}
+/* Star SVG Styling */
+#star {
+  width: 52px;
+  height: 52px;
+}
+#star>.cls-1{fill:#fff35f;stroke:#54596e;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}
+#star>.cls-2{opacity:0.15;}
+#star>.cls-3{fill:#54596e;}
+#star>.cls-4{fill:#fff;}
 
-/* End Heart SVG Styling  */
+/* End Star SVG Styling */
+
+/* Sword-heart SVG Styling  */
+#sword-heart {
+  width: 68px;
+  height: 68px;
+}
+#sword-heart>.cls-1 {fill: #ff80c3;}
+#sword-heart>:is(.cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7){stroke:#54596e;stroke-linecap:round;stroke-width:2px;}
+#sword-heart>:is(.cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6){stroke-linejoin:round;}
+#sword-heart>.cls-2{fill:#d8d8d8;}
+#sword-heart>.cls-3{fill:#fff;}
+#sword-heart>:is(.cls-4,.cls-7){fill:none;}
+#sword-heart>.cls-5{fill:#fff35f;}
+#sword-heart>.cls-6{fill:#55a6ff;}
+#sword-heart>.cls-7{stroke-miterlimit:10;}
+#sword-heart>.cls-8{fill:#54596e;}
+
+/* End Sword-heart SVG Styling  */
+
+/* Muscle-love SVG Styling */
+#muscle-love {
+  width: 52px;
+  height: 52px;
+}
+#muscle-love>.cls-1{fill:#ff927d;}
+#muscle-love>:is(.cls-1,.cls-2,.cls-3,.cls-4){stroke:#54596e;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}
+#muscle-love>.cls-2{fill:#ffd578;}
+#muscle-love>.cls-3,
+#muscle-love>.cls-4{fill:none;}
+#muscle-love>.cls-4{opacity:0.2;}
+
+/* End Muscle-love SVG Styling  */
+
+/* Moon-Crescent SVG Styling */
+#moon-crescent {
+  width: 52px;
+  height: 52px;
+}
+#moon-crescent>.cls-1{fill:#61c5a8;stroke-linejoin:round;}
+#moon-crescent>:is(.cls-1,.cls-4){stroke:#54596e;}
+#moon-crescent>:is(.cls-1,.cls-4,.cls-6){stroke-linecap:round;stroke-width:2px;}
+#moon-crescent>:is(.cls-2,.cls-3){fill:#54596e;}
+#moon-crescent>.cls-2{opacity:0.2;}
+#moon-crescent>:is(.cls-4,.cls-6){fill:none;stroke-miterlimit:10;}
+#moon-crescent>.cls-5{fill:#f99;}
+#moon-crescent>.cls-6{stroke:#8065c4;}
+
+/* End Moon-Crescent SVG Styling */
+
