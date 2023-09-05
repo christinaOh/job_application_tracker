@@ -3,7 +3,8 @@ import AddJobAppButton from "./AddJobAppButton";
 function EmptyTable({onJobAppsChange}) {
     return (
         <div class="empty-table">
-            <h2>Welcome <span>👋  </span>Start tracking your job applications here!</h2>
+            <h1>Welcome <span>👋  </span></h1>
+            <h2>Start tracking your job applications here!</h2>
             <svg id="empty-table-svg" data-name="Group 512" xmlns="http://www.w3.org/2000/svg" width="1500" height="1500" viewBox="0 0 1500 1500">
                 <defs>
                     <clipPath id="clip-path">

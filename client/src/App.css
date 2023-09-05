@@ -94,22 +94,22 @@ header {
 
 .new-app-button {
   padding: 16px 72px;
-  background-color: white;
+  background-color: #3F3D56;
   border-radius: 5px;
-  border: solid black 2px;
+  border: none;
   filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.25));
 }
 
 .new-app-button>p {
-  color: black;
+  color: white;
   font-size: 22px;
   font-weight: 500;
   width: min-content;
-  margin: 0px
+  margin: 0px;
 }
 
 .new-app-button:hover {
-  background-color: lightgray;
+  background-color: #5DB7A0;
 }
 
 .new-app-button.add-new-application {
@@ -216,7 +216,8 @@ footer {
 footer > p {
   text-align: right;
   color: black;
-  padding: 5% 90px;
+  padding-right: 90px;
+  padding-bottom:50px;
   margin: 0px;
 }
 /* END FOOTER STYLING */
@@ -278,21 +279,22 @@ form > label {
 
 .submit-btn {
   padding: 16px 72px;
-  background-color: white;
+  background-color: #3F3D56;
   border-radius: 5px;
-  border: solid black 2px;
-  margin-top: 40px;
+  border: none;
+  filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.25));
+  margin-top: 50px;
 }
 
 .submit-btn>p {
-  color: black;
+  color: white;
   font-size: 22px;
   font-weight: 500;
   margin: 0px
 }
 
 .submit-btn:hover {
-  background-color: lightgray;
+  background-color: #5DB7A0;
 }
 
 .close-btn {
@@ -300,7 +302,7 @@ form > label {
   background-color: white;
   font-size: 20px;
   font-weight: 500;
-  color: darkslategray;
+  color: #3F3D56;
   width: 100%;
   text-align: right;
   margin-top: 45px;
@@ -318,7 +320,7 @@ form > label {
   background-color: white;
   font-size: 20px;
   font-weight: 500;
-  color: darkslategray;
+  color: #3F3D56;
   width: 100%;
   text-align: right;
   margin-bottom: 0px;
@@ -350,12 +352,15 @@ form > label {
   font-size: 30px;
   font-weight: 500;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 10px;
 }
 
 .empty-table>h1 {
   text-align: center;
-  font-size: 60px;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0px;
+  padding-top: 100px;
 }
 
 #empty-table-svg {
