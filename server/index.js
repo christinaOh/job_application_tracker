@@ -56,6 +56,18 @@ sequelize.authenticate().then(() => {
     try {
       const requestedId = req.params.id;
       const jobApp = await JobApp.update(req.body, { where: {id: requestedId}})
+      res.send("Jobapp with id: " + requestedId + " successfully updated!")
+    } catch (error) {
+      console.log(error)
+      res.send(error)
+    }
+  });
+
+  app.delete('/jobapps/delete/:id', async (req, res) => {
+    try {
+      const requestedId = req.params.id;
+      const jobApp = await JobApp.destroy({ where: {id: requestedId}})
+      res.send("jobapp with id: " + requestedId + " successfully deleted!")
     } catch (error) {
       console.log(error)
       res.send(error)

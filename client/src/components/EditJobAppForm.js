@@ -32,6 +32,17 @@ function EditJobAppForm({jobapps, onJobAppsChange, id, setSelectedId, setEditFor
         setSelectedId(null)
     }
 
+    async function onDeleteJobApp() {
+        await axios.delete('http://localhost:8000/jobapps/delete/'+ id, updatedJobAppObject)
+
+        const getRes = await axios.get('http://localhost:8000/jobapps')
+        console.log(getRes)
+
+        onJobAppsChange(getRes.data)
+        setEditFormVisible(false)
+        setSelectedId(null)
+    }
+
     function onChangeJobTitle(e) {
         setJobTitle(e.target.value)
     }
@@ -92,7 +103,10 @@ function EditJobAppForm({jobapps, onJobAppsChange, id, setSelectedId, setEditFor
                                 <option  value="Invited for Interview">Invited for Interview</option>
                             </select>
                         </label>
-                        <button class="submit-btn" type="submit"><p>Save</p></button>
+                        <div class='button-container'>
+                            <button class="submit-btn" type="submit"><p>Save</p></button>
+                            <button class="delete-btn" onClick={onDeleteJobApp}>Delete Application</button>
+                        </div>
                     </form>
                 </div>
             </div>
