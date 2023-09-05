@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import NewJobAppForm from './NewJobAppForm';
 
-function AddJobAppButton({onJobAppsChange}) {
+function AddJobAppButton({onJobAppsChange, buttonText}) {
     const [popUpVisible, setPopUpVisible] = useState(false);
   
     function OpenPopUp () {
@@ -9,8 +9,8 @@ function AddJobAppButton({onJobAppsChange}) {
     };
   
     return (
-      <div>
-        <button onClick={OpenPopUp} class="new-app-button"><p>Add New</p><p>Application</p></button>
+      <div class="btn-container">
+        <button onClick={OpenPopUp} class={"new-app-button " + buttonText.toLowerCase().replaceAll(" ", "-")}><p>{buttonText}</p></button>
         {popUpVisible ? <NewJobAppForm onPopUpClose={setPopUpVisible} onJobAppsChange={onJobAppsChange} /> : null}
       </div>
     );

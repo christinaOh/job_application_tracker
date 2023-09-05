@@ -11,7 +11,7 @@ function StatsOverview({jobApps, onJobAppsChange}) {
         <InterviewStatCard jobApps={jobApps}/>
         <AwaitingRespStatCard jobApps={jobApps}/>
         <RejectedStatCard jobApps={jobApps}/>
-        <AddJobAppButton onJobAppsChange = {onJobAppsChange}/>
+        <AddJobAppButton onJobAppsChange = {onJobAppsChange} buttonText={"Add New Application"}/>
       </div>
     )
 }
