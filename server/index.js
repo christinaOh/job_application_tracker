@@ -52,7 +52,17 @@ sequelize.authenticate().then(() => {
     }
   });
 
+  app.put('/jobapps/edit/:id', async (req, res) => {
+    try {
+      const requestedId = req.params.id;
+      const jobApp = await JobApp.update(req.body, { where: {id: requestedId}})
+    } catch (error) {
+      console.log(error)
+      res.send(error)
+    }
+  });
+
+
   app.listen(port, () => {
     console.log(`Server listening on ${port}`);
-  });
-  
+  }); 
