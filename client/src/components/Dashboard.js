@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import JobAppTable from './JobAppTable';
 import StatsOverview from './StatsOverview';
+import EmptyTable from './EmptyTable';
 import axios from 'axios';
 
 function Dashboard() {
@@ -17,10 +18,11 @@ function Dashboard() {
     }, []);
 
     return (
-      <div>
+      <body>
         <StatsOverview jobApps={jobApps} onJobAppsChange={setJobApps}/>
-        <JobAppTable jobApps={jobApps} onJobAppsChange={setJobApps}/>
-      </div>
+        {jobApps.length == 0 ? <EmptyTable onJobAppsChange={setJobApps}/>
+          : <JobAppTable jobApps={jobApps} onJobAppsChange={setJobApps}/>}
+      </body>
     );
 }
 

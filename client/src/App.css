@@ -188,6 +188,44 @@ td {
 }
 /* END TABLE STYLING */
 
+/* Empty Table Styling */
+.empty-table {
+  background-color: lightgrey;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.empty-table>h2 {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.empty-table>h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+#empty-table-svg {
+  width: 550px;
+  height: 550px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.new-app-button.get-started {
+  margin: 0px auto 0px auto;
+  display: block;
+}
+
+.empty-table > .btn-container {
+  padding-bottom: 100px;
+}
+/* End Empty Table Styling */
 /* Star SVG Styling */
 #star {
   width: 52px;
