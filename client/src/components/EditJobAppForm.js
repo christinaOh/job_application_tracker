@@ -2,7 +2,7 @@ import { useState } from "react"
 import axios from "axios";
 
 function EditJobAppForm({jobapps, onJobAppsChange, id, setSelectedId, setEditFormVisible}) {
-    const jobAppObject = jobapps.filter((jobapp) => jobapp.id == id)[0];
+    const jobAppObject = jobapps.filter((jobapp) => jobapp.id === id)[0];
 
     const [jobTitle, setJobTitle] = useState(jobAppObject.jobTitle);
     const [company, setCompany] = useState(jobAppObject.company);
@@ -22,9 +22,9 @@ function EditJobAppForm({jobapps, onJobAppsChange, id, setSelectedId, setEditFor
 
     async function createRequest(e) {
         e.preventDefault();
-        await axios.put('http://localhost:8000/jobapps/edit/'+ id, updatedJobAppObject)
+        await axios.put(process.env.REACT_APP_SERVER_URL + "/jobapps/edit/"+ id, updatedJobAppObject)
 
-        const getRes = await axios.get('http://localhost:8000/jobapps')
+        const getRes = await axios.get(process.env.REACT_APP_SERVER_URL + "/jobapps")
         console.log(getRes)
 
         onJobAppsChange(getRes.data)
@@ -33,9 +33,9 @@ function EditJobAppForm({jobapps, onJobAppsChange, id, setSelectedId, setEditFor
     }
 
     async function onDeleteJobApp() {
-        await axios.delete('http://localhost:8000/jobapps/delete/'+ id, updatedJobAppObject)
+        await axios.delete(process.env.REACT_APP_SERVER_URL + "/jobapps/delete/" + id, updatedJobAppObject)
 
-        const getRes = await axios.get('http://localhost:8000/jobapps')
+        const getRes = await axios.get(process.env.REACT_APP_SERVER_URL + "/jobapps")
         console.log(getRes)
 
         onJobAppsChange(getRes.data)

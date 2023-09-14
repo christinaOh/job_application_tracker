@@ -8,7 +8,8 @@ function Dashboard() {
     const [jobApps, setJobApps] = useState([]);
 
     async function getAndSetJobApps() {
-      const res = await axios.get('http://localhost:8000/jobapps')
+      console.log(process.env.REACT_APP_SERVER_URL)
+      const res = await axios.get(process.env.REACT_APP_SERVER_URL + "/jobapps")
       console.log(res.data)
       setJobApps(res.data)
     }
@@ -20,7 +21,7 @@ function Dashboard() {
     return (
       <body>
         <StatsOverview jobApps={jobApps} onJobAppsChange={setJobApps}/>
-        {jobApps.length == 0 ? <EmptyTable onJobAppsChange={setJobApps}/>
+        {jobApps.length === 0 ? <EmptyTable onJobAppsChange={setJobApps}/>
           : <JobAppTable jobApps={jobApps} onJobAppsChange={setJobApps}/>}
       </body>
     );

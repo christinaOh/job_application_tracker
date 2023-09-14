@@ -21,10 +21,11 @@ function NewJobAppForm({onPopUpClose, onJobAppsChange}) {
     async function createRequest(e) {
         e.preventDefault();
 
-        const res = await axios.post('http://localhost:8000/jobapps/create', jobAppObject)
+        const res = await axios.post(process.env.REACT_APP_SERVER_URL + "/jobapps/create", jobAppObject)
+        console.log(process.env.REACT_APP_SERVER_URL)
         console.log(res)
 
-        const getRes = await axios.get('http://localhost:8000/jobapps')
+        const getRes = await axios.get(process.env.REACT_APP_SERVER_URL + "/jobapps")
         console.log(getRes)
         onJobAppsChange(getRes.data)
 
