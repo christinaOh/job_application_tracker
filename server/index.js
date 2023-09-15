@@ -3,8 +3,7 @@ const sequelize = require('./db');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const models = require('./models')
-const JobApp = models.JobApp;
+const JobApp = require('./JobApp');
 const app = express(); 
 const port = process.env.PORT || 8000;
 
